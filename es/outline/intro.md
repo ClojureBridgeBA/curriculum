@@ -31,42 +31,44 @@ Introducción a la Programación en Clojure
 
 #### <button class="link" ng-model="block11" ng-click="block11=!block11">Intro</button>
 
-> Si nunca programaste antes, puede que no sepas que hay muchos lenguages
-> de dónde elegir. Puede que hayas escuchado de otros lenguajes
-> (o escucharás de ellos!) como C, JavaScript, Python y
+> Si nunca programaste antes, puede que no sepas que hay muchos lenguajes
+> para elegir. Algunos de los lenguajes de los que tengas conocimiento (¡o
+> vayas a tener conocimiento!) son: C, JavaScript, Python y
 > Java.
 {: ng-show="block11" .description}
 
-> Entonces ¿por qué estamos enseñanado Clojure? Aunque no es tan popular
-> como algunos de esos lenguajes, estamos usando Clojure por tres cualidades
-> que tiene que lo hacen ideal como primer lenguaje para aprender
-> (o un gran lenguaje para aprender) además de otros que tal vez ya conozcas:
+> Entonces ¿por qué estamos enseñanado Clojure? Si bien Clojure no es tan popular
+> como algunos de esos otros lenguajes que nombramos arriba, lo estamos usando
+> por tres cualidades que lo hacen ideal como primer lenguaje para
+> aprender a programar --o simplemente, un lenguaje buenísimo para agregar a tu
+> lista de lenguajes conocidos:
 {: ng-show="block11" .description}
-
 #### Clojure es _simple_ <button class="link" ng-bind-html="details" ng-model="block12" ng-click="block12=!block12"></button>
 
 > Clojure es _simple_. Esto no quiere decir que no sea poderoso; lo es. El
-> número de conceptos que tienes que saber para programar en Clojure es muy
-> pequeño y fácil de entender. Clojure crece con vos mientras lo
-> estas aprendiendo, y puedes ser muy productivo con un pequeño subconjunto
+> número de conceptos que tenés que saber para programar en Clojure es muy
+> pequeño y fácil de entender. Clojure crece con vos a medida que lo
+> aprendés, y podés ser muy productiva/o con un pequeño subconjunto
 > del lenguaje.
 {: ng-show="block12" .description}
 
-#### Clojure es de _proposito general_ <button class="link" ng-bind-html="details" ng-model="block13" ng-click="block13=!block13"></button>
+#### Clojure es _de proposito general_ <button class="link" ng-bind-html="details" ng-model="block13" ng-click="block13=!block13"></button>
 
-> Clojure es de _proposito general_. Algunos lenguajes tienen un foco específico.
-> JavaScript, por ejemplo, fue tradicionalmente usado solo en páginas web
-> (aunque eso ha cambiado de alguna manera). Objective-C es usado principalmente
-> para aplicaciones iPhone. Hoy vamos a hacer una aplicación para dibujar,
-> pero puedes usar Clojure para cualquier tipo de aplicación facilmente.
+> Clojure es _de propósito general_. Algunos lenguajes están focalizados
+> en algo específico.
+> JavaScript, por ejemplo, en un principio fue usado sólo en páginas web
+> (aunque eso ha cambiado de alguna manera). Objective-C se usa principalmente
+> para aplicaciones iPhone.
+> Si bien hoy vamos a hacer una aplicación para dibujar,
+> fácilmente podés usar Clojure para cualquier tipo de aplicación.
 {: ng-show="block13" .description}
 
-#### Clojure es _diversión_ <button class="link" ng-bind-html="details" ng-model="block14" ng-click="block14=!block14"></button>
+#### Clojure es _divertido_ <button class="link" ng-bind-html="details" ng-model="block14" ng-click="block14=!block14"></button>
 
-> Clojure es _diversión_. Eso es una cuestión de opinión, por supuesto, pero
-> pensamos que es verdad. Esperamos que durante este curso experimenten
-> la alegría de construir un programa hecho en Clojure y hacer algo
-> poderoso y sorprendente.
+> Clojure es _divertido_. Si bien eso es una cuestión de opinión, nosotros
+> pensamos que es así. En este curso, esperamos que, mientras construís un
+> programa en Clojure, experimentés la alegría de crear algo poderoso y
+> sorprendente.
 {: ng-show="block14" .description}
 </section>
 
