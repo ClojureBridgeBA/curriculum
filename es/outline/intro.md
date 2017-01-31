@@ -21,7 +21,7 @@ Introducción a la Programación en Clojure
 * ¿Para qué es bueno Clojure?
 * ¿Cómo se ve Clojure?
     - Comentarios
-* Qué es el REPL?
+* ¿Qué es un REPL?
 * El REPL en acción
 </section>
 
@@ -202,23 +202,24 @@ Introducción a la Programación en Clojure
 </section>
 
 <section>
-## ¿Qué es el REPL?
+## ¿Qué es un REPL?
 {: .slide_title .slide}
 
 #### <button class="link" ng-model="block51" ng-click="block51=!block51">Intro</button>
 
-> "REPL" significa "Leer-Evaluar-Imprimir-Loop" (del inglés "Read-Eval-Print-Loop")
-> lo cual no tieme mucho sentido sin el contexto.
-> Muchos lenguajes de programación, incluyendo Clojure,
-> tienen una manera de escribir código interactivamente, con el cual puedes
-> tener una respuesta instantanea. En otras palabras, el código es leído,
-> luego es evaluado,
-> el resultado es impreso en pantalla, y comienza nuevamente: un loop.
+> "REPL" es la sigla en inglés para "Ciclo de Lectura, Evaluación e Impresión"
+> ("Read-Eval-Print-Loop"). Pero... ¿qué quiere decir esto?
+> Muchos lenguajes de programación (y entre ellos, Clojure) tienen una manera de
+> escribir código en forma interactiva. De este modo, podés obtener respuestas
+> instantáneas a tus instrucciones. En otras palabras, el REPL se encarga de
+> (sucesivamente) leer el código que se le ingresa, evaluarlo e imprimir el
+> resultado correspondiente. Luego, es posible comenzar de nuevo (hacer un
+> ciclo).
 {: ng-show="block51" .description}
 
 **R**ead, **E**val, **P**rint, **L**oop
 
-![El repl de Nightcode](img/repl.png)
+![El REPL de Nightcode](img/repl.png)
 
 </section>
 
