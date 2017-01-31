@@ -18,7 +18,7 @@ Introducción a la Programación en Clojure
 {: .slide-title .chapter}
 
 * ¿Por qué Clojure?
-* ¿En qué es bueno Clojure?
+* ¿Para qué es bueno Clojure?
 * ¿Qué tal se ve Clojure?
     - Comentarios
 * Qué es el REPL?
@@ -73,37 +73,48 @@ Introducción a la Programación en Clojure
 </section>
 
 <section ng-controller="NarrativeController">
-## ¿En qué es bueno Clojure?
+## ¿Para qué es bueno Clojure?
 {: .slide_title .slide}
 
 #### <button class="link" ng-model="block21" ng-click="block21=!block21">Intro</button>
 
-> Entonces, dijimos que Clojure es de propósito general, y lo es. Eso no significa
-> que no tenga puntos fuertes.
+> Ya dijimos que Clojure es de propósito general, por lo que sirve para hacer de
+> todo. Claro que tiene sus puntos fuertes...
 {: ng-show="block21" .description}
 
 #### Procesamiento de datos <button class="link" ng-bind-html="details" ng-model="block22" ng-click="block22=!block22"></button>
 
-> Clojure es reconocido por hacer un buen procesamiento de datos. Esto es
-> porque tiene un buen set de estructuras de datos. Es decir, que tiene muchas
-> maneras incorporadas de representar datos que lo hacen fácil y poderoso.
+> Clojure es reconocido por ser bueno para procesar datos. Esto es
+> porque tiene un buen conjunto de estructuras de datos. Es decir, que ya tiene
+> incorporadas muchas maneras de representar datos útiles y poderosas.
 {: ng-show="block22" .description}
 
 #### Concurrencia <button class="link" ng-bind-html="details" ng-model="block23" ng-click="block23=!block23"></button>
 
-> Clojure es reconocido por su concurrencia. Pensá acerca de escribir
-> instrucciones para cuatro de tus amigos sobre cómo construir una casa del
-> árbol, pero en vez de escribirlas de manera que un sólo paso es realizado
-> a la vez, cada uno de tus amigos hace parte del trabajo. Entonces, ellos
-> coordinan el momento exacto para ensamblar esas partes en partes más
-> grandes, y hacen esto una y otra vez hasta el final, cuando todas
-> las partes se juntan. Estas instrucciones pueden ser realmente complicadas
-> y difíciles de escribir (y probablemente difíciles de leer también).
-> Clojure nos da algunas maneras fáciles de escribir este tipo de
-> instrucciones para computadoras.
+> Clojure es reconocido por su concurrencia. Concurrencia es una manera de
+> hacer las cosas que, en ciertos casos, puede llegar a ser más eficiente
+> que hacerlo en forma secuencial.
+> _(Trabajar en forma secuencial quiere
+> decir: primero, definimos un orden para construir los componentes que
+> necesitamos; luego, comenzamos por el primer componente de la lista,
+> haciendo de a uno a la vez (aunque en eso trabajemos varias/os); y sólo
+> podemos avanzar al siguiente elemento de la lista cuando todos sus
+> predecesores hayan sido terminados.)_
+> Supongamos que querés escribir las instrucciones apropiadas para construir
+> una casa de árbol de a cuatro amigas/os de forma tal que permitan que cada
+> una/o trabaje en el o los componentes que desee y que coordinen en el
+> momento justo para para ir ensamblando las partes ya construidas hasta
+> ese momento, generando partes más complejas, hasta que al final, estén
+> combinadas todas las piezas.
+> Escribir (y eventualmente leer) tales instrucciones podría llegar a ser bastante difícil de
+> escribir... a menos que contaras con herramientas lingüísticas que te ayuden
+> a hacerlo.
+> Volviendo de nuestro ejemplo al ámbito de la programación, Clojure viene con
+> herramientas incorporadas que nos facilita el escribir "instrucciones para
+> computadoras" que resuelven problemas de esta manera.
 {: ng-show="block23" .description}
 
-#### Todo! <button class="link" ng-bind-html="details" ng-model="block24" ng-click="block24=!block24"></button>
+#### ¡Todo! <button class="link" ng-bind-html="details" ng-model="block24" ng-click="block24=!block24"></button>
 
 > Clojure también sirve para construir aplicaciones de dibujo con
 > [Quil](https://github.com/quil/quil), con el cual vamos a hacer algo
