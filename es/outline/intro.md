@@ -19,7 +19,7 @@ Introducción a la Programación en Clojure
 
 * ¿Por qué Clojure?
 * ¿Para qué es bueno Clojure?
-* ¿Qué tal se ve Clojure?
+* ¿Cómo se ve Clojure?
     - Comentarios
 * Qué es el REPL?
 * El REPL en acción
@@ -123,43 +123,45 @@ Introducción a la Programación en Clojure
 </section>
 
 <section ng-controller="NarrativeController">
-## ¿Qué tal se ve Clojure?
+## ¿Cómo se ve Clojure?
 {: .slide_title .slide}
 
 ```clojure
-(print-str "Hello, World!")
+(print-str "¡Hola, mundo!")
 (+ 3 4)
 (forward :trinity 40)
 ```
 
 #### Paréntesis <button class="link" ng-bind-html="details" ng-model="block31" ng-click="block31=!block31"></button>
 
-> Viste los paréntesis?. Los paréntesis encierran instrucciones para la
-> computadora en Clojure. Un paréntesis izquierdo
-> es el comienzo de una instrucción, y su respectivo paréntesis derecho es
-> el final de una instrucción. Normalmente, el código Clojure tiene un montón
-> de paréntesis anidados, en otras palabras, los paréntesis anidados encierran
-> instrucciones.
+> ¿Viste los paréntesis?. En Clojure, cada par de paréntesis encierra una
+> instrucción para la computadora. Normalmente, el código Clojure tiene un montón de paréntesis anidados. O sea,
+> los paréntesis anidados encierran instrucciones.
 {: ng-show="block31" .description}
 
 #### Funciones <button class="link" ng-bind-html="details" ng-model="block32" ng-click="block32=!block32"></button>
 
-> Después de los paréntesis, veremos las instrucciones para la computadora.
-> Esa instrucción es lo que normalmente llamamos una _función_.
-> Las funciones hacen todo el trabajo duro en Clojure.
-> `print-str`, `+` y `forward` son funciones.
-> Cuando estas funciones se ejecutan, ellas retornan algún tipo de valor.
-> En Clojure las funciones siempre retornan un valor.
+> Como dijimos arriba, dentro de los paréntesis están las instrucciones para la
+> computadora. En Clojure, cada instrucción es una _función_, y hacen la parte
+> más dura del trabajo. En nuestro ejemplo de arriba, tanto `print-str`, `+`
+> como `forward` son funciones.
+> Una de las características de las funciones es que siempre que se ejecutan
+> sobre uno o más valores para el o los cuales están definidas devuelven una
+> respuesta. La respuesta puede ser ya sea un valor de un tipo determinado (un
+> número, uno o más caracteres, etc.) o "nada". En Clojure, el equivalente de
+> "nada" es `nil`.
 {: ng-show="block32" .description}
 
 #### Argumentos <button class="link" ng-bind-html="details" ng-model="block33" ng-click="block33=!block33"></button>
 
-> La mayoria de las funciones usan _argumentos_ (es todo aquello dentro de los
-> parentesis después de la función).
-> `print-str` utiliza "Hello, World!" y retorna una cadena de caracteres.
-> `+` utiliza 3 y 4, los suma, y devuelve 7.
-> `forward` utiliza :trinity y 40, mueve la tortuga en 40 y retorna
-> el resultado.
+> La mayoria de las funciones usan _argumentos_. En Clojure, se consideran
+> argumentos todo lo que esté dentro de los parentesis después de la función.
+> En nuestro ejemplo, la función `print-str` utiliza la cadena de texto
+> `"¡Hola, mundo!"` como argumento; y, como retorno, muestra esa misma cadena por
+> pantalla. Luego, la función `+` utiliza los números `3` y `4` como argumentos,
+> los suma, y devuelve el número `7`.
+> Finalmente, la función `forward` utiliza la clave `:trinity` y el número `40`,
+> mueve la tortuga 40 unidades y retorna el resultado.
 {: ng-show="block33" .description}
 </section>
 
@@ -169,28 +171,32 @@ Introducción a la Programación en Clojure
 <button class="link" ng-bind-html="details1" ng-model="block41" ng-click="block41=!block41"></button>
 <button class="link" ng-bind-html="details2" ng-model="block42" ng-click="block42=!block42"></button>
 
-> Cuando escribimos código, trataremos de que sea lo más claro posible. Esto es
-> un gran avance porque nuestro código puede ser leido por otros (a veces
-> más que por nosotros mismos!), o podemos volver a leer nuestro propio código
-> más tarde, y puede ser que hayamos olvidado cada detalle
-> del código. Una manera de clarificar nuestro código es haciendo
-> anotaciones con comentarios. Los comentarios son notas que agregamos al código,
-> para nuestro propio bien, y que la computadora ignora.
+> Al escribir código, la idea es hacerlo de la forma más clara y legible
+> posible. Esto es crítico, puesto que nuestro código seguramente va a ser
+> releido en un futuro (poco o muy distante). Y, dado el suficiente tiempo,
+> poco va a importar si fuimos nosotras/os mismas/os quienes escribimos el
+> código en un principio: seguramente nos habremos olvidado no sólo de por qué
+> lo escribimos de una manera determinada, sino de hasta qué hace. _(Y, creeme
+> hay muuuchos ejemplos en Internet de esto último.)_
+> Una manera de hacer nuestro código más claro y legible es agregandole notas
+> explicativas. En programación, a estas notas explicativas agregadas al código
+> (a ser ignoradas por la computadora) se las llama _comentarios_.
 {: ng-show="block41" .description}
 
-> En Clojure, los comentarios pueden ser comenzados con un punto y coma. Todo lo
-> que va después de un punto y coma hasta el final de la línea es un comentario que
-> es ignorado por la computadora. Solo un punto y coma es necesario, pero
-> a veces puedes ver dos punto y coma en una fila, dependiendo del estilo
-> usado.
+> En Clojure, los comentarios comienzan con un punto y coma (`;`). Todo lo
+> que escribamos a continuación de un punto y coma (hasta el final de la línea)
+> va a ser ignorado por la computadora. _(Si bien en Clojure sólo hace falta un
+> sólo punto y coma para iniciar un comentario, dependiendo de las preferencias
+> de la desarrolladora (o desarrollador), a veces pueden verse dos (`;;`).
+> En ambos casos, se suele dejar un espacio antes de escribir el texto del comentario.)_
 {: ng-show="block42" .description}
 
 > Referencia: [Comment](http://clojurebridge.github.io/community-docs/docs/clojure/comment/)
 {: ng-show="block42" .description}
 
 ```clojure
-;; ejemplo de funciones de un slide anterior
-(print-str "Hola, Mundo!")   ; el bien-conocido "hola mundo"
+;; funciones del ejemplo anterior, con comentarios
+(print-str "¡Hola, Mundo!")   ; el bien-conocido "hola mundo"
 (+ 3 4)                      ; ¿por qué no 3 + 4? lo veremos después
 ```
 </section>
