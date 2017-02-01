@@ -22,7 +22,7 @@ Introducción a la Programación en Clojure
 * ¿Cómo se ve Clojure?
     - Comentarios
 * ¿Qué es un REPL?
-* El REPL en acción
+* Un REPL en acción
 </section>
 
 <section ng-controller="NarrativeController">
@@ -224,26 +224,29 @@ Introducción a la Programación en Clojure
 </section>
 
 <section ng-controller="NarrativeController">
-## El REPL en acción
+## Un REPL en acción
 {: .slide_title .slide}
 
 
-#### Nightcode InstaREPL <button class="link" ng-bind-html="details" ng-model="block61" ng-click="block61=!block61"></button>
+#### El InstaREPL de Nightcode <button class="link" ng-bind-html="details" ng-model="block61" ng-click="block61=!block61"></button>
 
 > Para interactuar con Clojure, podemos usar el InstaREPL de Nightcode.
-> esta es una buena manera de jugar con Clojure interactivamente.
+> Ésta es una buena manera de jugar con Clojure de forma interactiva.
 {: ng-show="block61" .description}
 
 
-#### Usando el REPL <button class="link" ng-bind-html="details" ng-model="block62" ng-click="block62=!block62"></button>
+#### Cómo usar el REPL de Nightcode <button class="link" ng-bind-html="details" ng-model="block62" ng-click="block62=!block62"></button>
 
 > Nightcode tiene un seteo de proyecto conectado con el REPL en el panel de abajo.
-> Cuando el botón "Run with REPL" es clickeado, el REPL empieza.
+> Para usar su REPL incorporado, hay que hacer click ("pinchar") en el botón
+> "Run with REPL".
 {: ng-show="block62" .description}
 
-> Alternativamente, podemos iniciar un  REPL usando leiningen en una terminal (sin
-> Nightcode).
-> En una terminal, escribe `lein repl`, entonces el REPL iniciará.
+> Otra opción para iniciar un REPL sin utilizar Nightcode en una terminal es
+> usar Leiningen (una herramienta para facilitar el manejo de todo lo necesario
+> para que tu programa pueda ser ejecutado con la máquina; en la jerga de
+> programación, un _administrador de dependencias_).
+> Para iniciar el REPL de Leiningen, en una terminal, escribí `lein repl`.
 > Si ejecutamos `lein repl`  en el directorio del proyecto (carpeta), verás
 > la configuración.
 {: ng-show="block62" .description}
@@ -259,32 +262,32 @@ Introducción a la Programación en Clojure
 </section>
 
 <section>
-#### EJERCICIO 1: Prueba el InstaREPL de Nightcode
+#### EJERCICIO 1: Probá el InstaREPL de Nightcode
 
-1. Inicia Nightcode
-2. Importa `myproject` <br/> (el cual creaste mientras testeabas el setup de leiningen)
+1. Iniciá Nightcode
+2. Importá `myproject` <br/> (el que creaste mientras probabas la configuración de Leiningen)
 3. Abrí `core.clj` <br/>(`myproject` -> `src` -> `myproject` -> `core.clj`
-4. Hacé click en el  __InstREPL__ botón
-5. Escribí las funciones Clojure escritas abajo y observa qué pasa
+4. Hacé click ("pinchá") en el botón __InstaREPL__
+5. Escribí las funciones en Clojure que aparecen abajo; observá qué pasa
 
 ```clojure
-(print-str "Hola, Mundo!")
-(print-str "Hola, Mundo!" " " "desde Clojure")
+(print-str "Hola, mundo!")
+(print-str "Hola, mundo!" " " "desde Clojure")
 (+ 3 4)
 (- 3 4)
 (* 3 4)
 ```
-> Asegurate de tipear las líneas  <em>exactamente</em> como las ves,
-> teniendo cuidado de poner los paréntesis en el lugar correcto.
+> Asegurate de tipear las líneas <em>tal cual</em> se ven.
+> En particular, asegurate de que los paréntesis vayan en el lugar correcto.
 </section>
 
 <section>
 #### EJERCICIO 2: Evaluar un archivo y una línea - Parte 1
 
 * Abrí el archivo `welcometoclojurebridge/src/clojurebridge_turtle/walk.clj`
-* Evaluá todo el archivo presionando "Run with REPL" seguido de "Reload File"
+* Para evaluar todo el archivo, hacé click en "Run with REPL", y luego en "Reload File"
 * Mirá qué pasa después
-* Tipeá `(forward 40)` al fondo del archivo `walk.clj` en el editor. Evaluá esta línea eligiendo la línea y presionando "Reload Selection"
+* Al final del archivo `walk.clj`, tipeá `(forward 40)`. Para evaluar esta línea, seleccionala y hacé click en "Reload Selection"
 * Mirá qué pasa después
 
 (Continúa en el EJERCICIO 3)
@@ -295,29 +298,29 @@ Introducción a la Programación en Clojure
 
 (Suponiendo que el EJECICIO 2 está terminado)
 
-* Tipeá `(right 90)` y "enter" en el REPL (al fondo) ![Run with REPL pane](img/run-with-repl.png)
+* En la parte inferior del REPL, tipeá `(right 90)` y "enter" ![Panel "Run with REPL"](img/run-with-repl.png)
 * Mirá qué pasa con la tortuga
-* Pegale una mirada a [Tortugas App API](https://github.com/ClojureBridge/welcometoclojurebridge/blob/master/outline/TURTLE.md) y
-[Cómo pasear Tortugas](https://github.com/ClojureBridge/welcometoclojurebridge/blob/master/outline/TURTLE-SAMPLES.md)
-[sección 1 y 2], y prueba más comandos para pasear tu tortuga
+* Pegale una mirada a [API de la App Tortugas](https://github.com/ClojureBridge/welcometoclojurebridge/blob/master/outline/TURTLE.md) y
+[Cómo pasear tortugas](https://github.com/ClojureBridge/welcometoclojurebridge/blob/master/outline/TURTLE-SAMPLES.md)
+[sección 1 y 2], y probá más comandos para pasearle a tu tortuga
 </section>
 
 <section>
 #### EJERCICIO 4: Mirar los docs de Clojure
 
-* En el fondo del REPL, intentá mirar la  documentación para las funciones usadas
-* Podés usar el comando `(doc function-name)` para esto
-* Probá `(doc +)` y `(doc forward)` en el REPL
-* Probá algun otra función que hayamos usado, por ejemplo, `-`, `*`, o `doc`
+* En la parte inferior del REPL, probá ver la  documentación para las funciones usadas
+* Para ver la documentación, podés usar el comando `(doc <nombre-de-la-función>)`
+* En el REPL, probá `(doc +)` y `(doc forward)`
+* Probá alguna otra función que hayas usado, por ejemplo, `-`, `*`, o `doc`
 </section>
 
 {% comment %}
 
-:star2: El link siguiente es para un slide solo. Andá al[README.md](../README.md). :star2:
+:star2: El enlace siguiente es para un slide solo. Ir al[README.md](../README.md). :star2:
 
 {% endcomment %}
 
 <section>
-Volvé al <a href="javascript:;" onClick="Reveal.slide(1);">primer slide</a>,
-o andá al [outline del curriculum](/curriculum/es/#/1).
+Volver al <a href="javascript:;" onClick="Reveal.slide(1);">primer slide</a>,
+o ir al [outline del curriculum](/curriculum/es/#/1).
 </section>
