@@ -43,6 +43,7 @@ Introducción a la Programación en Clojure
 > aprender a programar --o simplemente, un lenguaje buenísimo para agregar a tu
 > lista de lenguajes conocidos:
 {: ng-show="block11" .description}
+
 #### Clojure es _simple_ <button class="link" ng-bind-html="details" ng-model="block12" ng-click="block12=!block12"></button>
 
 > Clojure es _simple_. Esto no quiere decir que no sea poderoso; lo es. El
