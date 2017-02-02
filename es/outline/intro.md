@@ -155,8 +155,8 @@ Introducción a la Programación en Clojure
 
 #### Argumentos <button class="link" ng-bind-html="details" ng-model="block33" ng-click="block33=!block33"></button>
 
-> La mayoria de las funciones usan _argumentos_. En Clojure, se consideran
-> argumentos todo lo que esté dentro de los parentesis después de la función.
+> La mayoría de las funciones usan _argumentos_. En Clojure, se consideran
+> argumentos todo lo que esté dentro de los paréntesis después de la función.
 > En nuestro ejemplo, la función `print-str` utiliza la cadena de texto
 > `"¡Hola, mundo!"` como argumento; y, como retorno, muestra esa misma cadena por
 > pantalla. Luego, la función `+` utiliza los números `3` y `4` como argumentos,
@@ -174,7 +174,7 @@ Introducción a la Programación en Clojure
 
 > Al escribir código, la idea es hacerlo de la forma más clara y legible
 > posible. Esto es crítico, puesto que nuestro código seguramente va a ser
-> releido en un futuro (poco o muy distante). Y, dado el suficiente tiempo,
+> releído en un futuro (poco o muy distante). Y, dado el suficiente tiempo,
 > poco va a importar si fuimos nosotras/os mismas/os quienes escribimos el
 > código en un principio: seguramente nos habremos olvidado no sólo de por qué
 > lo escribimos de una manera determinada, sino de hasta qué hace. _(Y, creeme
