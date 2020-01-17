@@ -94,10 +94,41 @@ Una vez bajada la versión de Java que corresponde, corré el ejecutable y segu�
 
 Leiningen es una herramienta para administrar proyectos Clojure desde la terminal.
 
+Leiningen es una herramienta para administrar proyectos Clojure desde la terminal.
+Tenes tres opciones para instalarlo:
+
+1) 	__Via el instalador de linea comandos Chocolatery__:
+
+![sitio de Chocolatery](/outline/img/lein_install_chocolatery.png)
+Instalá chocolatery siguiendo este video https://youtu.be/KTUO1g_Btfk
+
+Luego de eso, ejecutá el siguiente comando en tu terminal.
+
+```
+choco install lein
+```
+
+2) __Via el script lein.bat__:
+
+Andá al [sitio de Leiningen](http://leiningen.org/). Vas a ver un enlace al script `lein.bat` en la sección "Install" ("Instalación"). Hacé click en ese enlace con el botón secundario del ratón y elegí "Guardar enlace como...". Guardalo en la unidad pricipal de disco (suele ser C:).
+
+![sitio de Leiningen](/outline/img/leiningen_site.png)
+![sitio de Leiningen](/outline/img/lein_install_win10.png)
+
+Luego de eso, ejecutá el siguiente comando en tu terminal.
+
+```
+lein.bat
+```
+
+Luego de haber ejecutado el commando de arriba, ejecutá el comando `lein version`. 
+Va a tomar un rato, puesto que, como es la primera vez, va a bajar algunos recursos que necesita. Si lo completa correctamente, ¡genial!. Si no, pedile ayuda a une coach.
+
+3) __Via leiningen-win-installer__:
+
 > ver "Problemas Comunes" para probar otra forma
 
 Ahora, volvé a [la web del instalador de Leiningen](http://leiningen-win-installer.djpowell.net/) y descargá el "leiningen-win-installer". Correlo y seguí la sección "Detailed installation" en la web del instalador. Al final de la misma, dejá "Run a Clojure REPL" marcado antes de clickear "Finish". Si se abre una terminal como la que muestra la web, entonces estas listo para continuar.
-
 
 ## Instalando Nightcode
 
